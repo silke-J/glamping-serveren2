@@ -1,5 +1,5 @@
 import express from "express";
-import { signInUser } from "../../handlers/auth.handler.js";
+import { signInUser } from "../handlers/auth.handler.js";
 
 const authRoute = express.Router();
 

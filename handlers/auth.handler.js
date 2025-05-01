@@ -3,7 +3,7 @@ import bcryptjs from "bcryptjs";
 // JWT står for JSON Web Token, og bruges til at sende sikker og verificerbar information mellem to parter som et JSON-objekt.
 import jwt from "jsonwebtoken";
 // import userModel from "../models/user.model.js";
-import dbConnect from "../dbConnect.js";
+import dbConnect from "../dbcon.js";
 
 // Funktion til at logge en bruger ind, baseret på credentials (email og password)
 export const signInUser = async (credentials) => {
