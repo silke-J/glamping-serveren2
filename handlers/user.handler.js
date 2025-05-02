@@ -1,5 +1,6 @@
 import dbConnect from "../dbcon.js";
 import model from "../models/user.model.js";
+import bcrypt from "bcryptjs";
 
 export async function getAllUsers() {
   try {
@@ -47,6 +48,9 @@ export async function DeleteSingleUser(id) {
 export async function createUser(bodyObj) {
   try {
     await dbConnect();
+
+    bodyObj.hashedPassword = await bcrypt.hash(bodyObj.hashedPassword, 5);
+
     const user = await model.create(bodyObj);
     return user;
   } catch (error) {
