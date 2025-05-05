@@ -19,7 +19,7 @@ Disse routes er det samme for **activities**, **reviews** og **stays**. Blot uds
 
 #### DEL 1 – Backend og autentificering
 
-**Hvad er formålet med auth.route.js?**
+**Hvad er formålet med auth.route.js?**\
 Formålet med auth.route.js er at håndtere alle login- og registreringsruter, så koden bliver nemmere at finde rundt i og arbejde med.
 
 **Hvad gør funktionen signInUser i auth.handler.js?**
