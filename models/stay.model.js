@@ -6,7 +6,7 @@ const staySchema = new Schema(
   {
     title: { type: String, required: true },
     description: { type: String },
-    numberOfPersons: { type: Number },
+    numberOfPersons: { type: String },
     image: { type: String },
     price: { type: Number },
     includes: [{ type: String }],

@@ -1,638 +1,620 @@
 {
-	"info": {
-		"_postman_id": "5c213228-59ad-48ad-9ce1-e08b7d5a73a3",
-		"name": "2",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "32240204"
-	},
-	"item": [
-		{
-			"name": "stays",
-			"item": [
-				{
-					"name": "stays get all",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:3042/stays"
-					},
-					"response": []
-				},
-				{
-					"name": "stays create",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "lolol",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "lolol",
-									"type": "text"
-								},
-								{
-									"key": "numberOfPersons",
-									"value": "10",
-									"type": "text"
-								},
-								{
-									"key": "price",
-									"value": "300",
-									"type": "text"
-								},
-								{
-									"key": "includes",
-									"value": "[\"hh\", \"kkkk\"]",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
-								}
-							]
-						},
-						"url": "http://localhost:3042/stays"
-					},
-					"response": []
-				},
-				{
-					"name": "stays delete",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": "http://127.0.0.1:3042/stays/681280d39d95f2da6b8961c9"
-					},
-					"response": []
-				},
-				{
-					"name": "stays get single",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://127.0.0.1:3042/stays/681281509d95f2da6b8961d2"
-					},
-					"response": []
-				},
-				{
-					"name": "stays update",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "id",
-									"value": "681281509d95f2da6b8961d2",
-									"type": "text"
-								},
-								{
-									"key": "title",
-									"value": "j",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "j",
-									"type": "text"
-								},
-								{
-									"key": "numberOfPersons",
-									"value": "2",
-									"type": "text"
-								},
-								{
-									"key": "price",
-									"value": "2",
-									"type": "text"
-								},
-								{
-									"key": "includes",
-									"value": "j",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_France.png"
-								}
-							]
-						},
-						"url": "http://127.0.0.1:3042/stays"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "activities",
-			"item": [
-				{
-					"name": "activities get all",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://127.0.0.1:3042/activities"
-					},
-					"response": []
-				},
-				{
-					"name": "activities get single",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://127.0.0.1:3042/activities/6812916fb28cddcd88c2698"
-					},
-					"response": []
-				},
-				{
-					"name": "activities delete",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": "http://127.0.0.1:3042/activities/6812916fb28cddcd88c2698b"
-					},
-					"response": []
-				},
-				{
-					"name": "activities create",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "l",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "l",
-									"type": "text"
-								},
-								{
-									"key": "weekday",
-									"value": "idag",
-									"type": "text"
-								},
-								{
-									"key": "time",
-									"value": "idag",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://127.0.0.1:3042/activities",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "3042",
-							"path": [
-								"activities"
-							],
-							"query": [
-								{
-									"key": "title",
-									"value": "o",
-									"disabled": true
-								},
-								{
-									"key": "description",
-									"value": "lll",
-									"disabled": true
-								},
-								{
-									"key": "weekday",
-									"value": "ll",
-									"disabled": true
-								},
-								{
-									"key": "time",
-									"value": "idag",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "activities update",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "id",
-									"value": "6812916fb28cddcd88c2698b",
-									"type": "text"
-								},
-								{
-									"key": "title",
-									"value": "h",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "h",
-									"type": "text"
-								},
-								{
-									"key": "weekday",
-									"value": "h",
-									"type": "text"
-								},
-								{
-									"key": "time",
-									"value": "h",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_Germany.png"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://127.0.0.1:3042/activities",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "3042",
-							"path": [
-								"activities"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "i",
-									"disabled": true
-								},
-								{
-									"key": "title",
-									"value": "u",
-									"disabled": true
-								},
-								{
-									"key": "description",
-									"value": "u",
-									"disabled": true
-								},
-								{
-									"key": "weekday",
-									"value": "u",
-									"disabled": true
-								},
-								{
-									"key": "time",
-									"value": "igår",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "reviews",
-			"item": [
-				{
-					"name": "reviews get all",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:3042/reviews"
-					},
-					"response": []
-				},
-				{
-					"name": "reviews get single",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:3042/reviews/681323265c0bbb9f91d8d396"
-					},
-					"response": []
-				},
-				{
-					"name": "reviews delete",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": "http://localhost:3042/reviews/681296dd35a27e444a68812e"
-					},
-					"response": []
-				},
-				{
-					"name": "create review",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "review",
-									"value": "l",
-									"type": "text"
-								},
-								{
-									"key": "age",
-									"value": "2",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "l",
-									"type": "text"
-								},
-								{
-									"key": "stay",
-									"value": "l",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/pic.png"
-								}
-							]
-						},
-						"url": "http://localhost:3042/reviews"
-					},
-					"response": []
-				},
-				{
-					"name": "update review",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "id",
-									"value": "681323265c0bbb9f91d8d396",
-									"type": "text"
-								},
-								{
-									"key": "review",
-									"value": "hahahahahahaah",
-									"type": "text"
-								},
-								{
-									"key": "age",
-									"value": "21",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "Lars",
-									"type": "text"
-								},
-								{
-									"key": "stay",
-									"value": "idFraStay",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_Germany.png"
-								}
-							]
-						},
-						"url": "http://127.0.0.1:3042/reviews"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "users",
-			"item": [
-				{
-					"name": "get all users",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:3042/users"
-					},
-					"response": []
-				},
-				{
-					"name": "get single user",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:3042/users/68132b1577d79f105f09ef86"
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "name",
-									"value": "blablabl",
-									"type": "text"
-								},
-								{
-									"key": "email",
-									"value": "llllddddaaaaa",
-									"type": "text"
-								},
-								{
-									"key": "hashedPassword",
-									"value": "293012",
-									"type": "text"
-								},
-								{
-									"key": "role",
-									"value": "normal",
-									"type": "text"
-								},
-								{
-									"key": "image",
-									"type": "file",
-									"src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
-								}
-							]
-						},
-						"url": "http://localhost:3042/users"
-					},
-					"response": []
-				},
-				{
-					"name": "delete",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": "http://localhost:3042/users/68132c8c31e8ffc777e7a3c4"
-					},
-					"response": []
-				},
-				{
-					"name": "update",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "id",
-									"value": "68132b1577d79f105f09ef86",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "dddd",
-									"type": "text"
-								},
-								{
-									"key": "email",
-									"value": "dddd",
-									"type": "text"
-								},
-								{
-									"key": "hashedPassword",
-									"value": "dddd",
-									"type": "text"
-								},
-								{
-									"key": "role",
-									"value": "dddd",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:3042/users",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3042",
-							"path": [
-								"users"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "0023",
-									"disabled": true
-								},
-								{
-									"key": "name",
-									"value": "dadas",
-									"disabled": true
-								},
-								{
-									"key": "email",
-									"value": "ddd",
-									"disabled": true
-								},
-								{
-									"key": "hashedPassword",
-									"value": "dddd",
-									"disabled": true
-								},
-								{
-									"key": "role",
-									"value": "dddd",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "5c213228-59ad-48ad-9ce1-e08b7d5a73a3",
+    "name": "2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "32240204"
+  },
+  "item": [
+    {
+      "name": "stays",
+      "item": [
+        {
+          "name": "stays get all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3042/stays"
+          },
+          "response": []
+        },
+        {
+          "name": "stays create",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "lolol",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "lolol",
+                  "type": "text"
+                },
+                {
+                  "key": "numberOfPersons",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "300",
+                  "type": "text"
+                },
+                {
+                  "key": "includes",
+                  "value": "[\"hh\", \"kkkk\"]",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
+                }
+              ]
+            },
+            "url": "http://localhost:3042/stays"
+          },
+          "response": []
+        },
+        {
+          "name": "stays delete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": "http://127.0.0.1:3042/stays/681280d39d95f2da6b8961c9"
+          },
+          "response": []
+        },
+        {
+          "name": "stays get single",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://127.0.0.1:3042/stays/681281509d95f2da6b8961d2"
+          },
+          "response": []
+        },
+        {
+          "name": "stays update",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "681281509d95f2da6b8961d2",
+                  "type": "text"
+                },
+                {
+                  "key": "title",
+                  "value": "j",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "j",
+                  "type": "text"
+                },
+                {
+                  "key": "numberOfPersons",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "includes",
+                  "value": "j",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_France.png"
+                }
+              ]
+            },
+            "url": "http://127.0.0.1:3042/stays"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "activities",
+      "item": [
+        {
+          "name": "activities get all",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://127.0.0.1:3042/activities"
+          },
+          "response": []
+        },
+        {
+          "name": "activities get single",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://127.0.0.1:3042/activities/6812916fb28cddcd88c2698"
+          },
+          "response": []
+        },
+        {
+          "name": "activities delete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": "http://127.0.0.1:3042/activities/6812916fb28cddcd88c2698b"
+          },
+          "response": []
+        },
+        {
+          "name": "activities create",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "l",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "l",
+                  "type": "text"
+                },
+                {
+                  "key": "weekday",
+                  "value": "idag",
+                  "type": "text"
+                },
+                {
+                  "key": "time",
+                  "value": "idag",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3042/activities",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "3042",
+              "path": ["activities"],
+              "query": [
+                {
+                  "key": "title",
+                  "value": "o",
+                  "disabled": true
+                },
+                {
+                  "key": "description",
+                  "value": "lll",
+                  "disabled": true
+                },
+                {
+                  "key": "weekday",
+                  "value": "ll",
+                  "disabled": true
+                },
+                {
+                  "key": "time",
+                  "value": "idag",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "activities update",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "6812916fb28cddcd88c2698b",
+                  "type": "text"
+                },
+                {
+                  "key": "title",
+                  "value": "h",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "h",
+                  "type": "text"
+                },
+                {
+                  "key": "weekday",
+                  "value": "h",
+                  "type": "text"
+                },
+                {
+                  "key": "time",
+                  "value": "h",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_Germany.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3042/activities",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "3042",
+              "path": ["activities"],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "i",
+                  "disabled": true
+                },
+                {
+                  "key": "title",
+                  "value": "u",
+                  "disabled": true
+                },
+                {
+                  "key": "description",
+                  "value": "u",
+                  "disabled": true
+                },
+                {
+                  "key": "weekday",
+                  "value": "u",
+                  "disabled": true
+                },
+                {
+                  "key": "time",
+                  "value": "igår",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "reviews",
+      "item": [
+        {
+          "name": "reviews get all",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3042/reviews"
+          },
+          "response": []
+        },
+        {
+          "name": "reviews get single",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3042/reviews/681323265c0bbb9f91d8d396"
+          },
+          "response": []
+        },
+        {
+          "name": "reviews delete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:3042/reviews/681296dd35a27e444a68812e"
+          },
+          "response": []
+        },
+        {
+          "name": "create review",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "review",
+                  "value": "l",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "l",
+                  "type": "text"
+                },
+                {
+                  "key": "stay",
+                  "value": "l",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/pic.png"
+                }
+              ]
+            },
+            "url": "http://localhost:3042/reviews"
+          },
+          "response": []
+        },
+        {
+          "name": "update review",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "681323265c0bbb9f91d8d396",
+                  "type": "text"
+                },
+                {
+                  "key": "review",
+                  "value": "hahahahahahaah",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "21",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "Lars",
+                  "type": "text"
+                },
+                {
+                  "key": "stay",
+                  "value": "idFraStay",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/Flag_of_Germany.png"
+                }
+              ]
+            },
+            "url": "http://127.0.0.1:3042/reviews"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "get all users",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3042/users"
+          },
+          "response": []
+        },
+        {
+          "name": "get single user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3042/users/68132b1577d79f105f09ef86"
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "blablabl",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "llllddddaaaaa",
+                  "type": "text"
+                },
+                {
+                  "key": "hashedPassword",
+                  "value": "293012",
+                  "type": "text"
+                },
+                {
+                  "key": "role",
+                  "value": "normal",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/laarr/Desktop/hjemmesider skole/dynScoreboard/project/public/imgs/default.png"
+                }
+              ]
+            },
+            "url": "http://localhost:3042/users"
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:3042/users/68132c8c31e8ffc777e7a3c4"
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "68132b1577d79f105f09ef86",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "dddd",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "dddd",
+                  "type": "text"
+                },
+                {
+                  "key": "hashedPassword",
+                  "value": "dddd",
+                  "type": "text"
+                },
+                {
+                  "key": "role",
+                  "value": "dddd",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3042/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3042",
+              "path": ["users"],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "0023",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "dadas",
+                  "disabled": true
+                },
+                {
+                  "key": "email",
+                  "value": "ddd",
+                  "disabled": true
+                },
+                {
+                  "key": "hashedPassword",
+                  "value": "dddd",
+                  "disabled": true
+                },
+                {
+                  "key": "role",
+                  "value": "dddd",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
 }
